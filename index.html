@@ -6,6 +6,7 @@
     <title>RCJ LABS UNIVERSAL - Laboratorio de Análisis Químico de Minerales</title>
     <meta name="description" content="Laboratorio especializado en análisis químico de minerales y pruebas metalúrgicas. Calidad y experiencia a su servicio.">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/visual-effects.css">
 </head>
 <body>
     <!-- Header -->
@@ -53,49 +54,62 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">LABORATORIO DE ANÁLISIS QUÍMICO DE MINERALES Y PRUEBAS METALÚRGICAS</h1>
-            <p class="hero-subtitle">"Calidad y Experiencia a su Servicio"</p>
-            <a href="servicios.html" class="btn btn-primary">Conoce Nuestros Servicios</a>
+        <div class="hero-video-container">
+            <iframe 
+                src="https://www.youtube.com/embed/zSV10XYgItA?autoplay=1&mute=1&loop=1&playlist=zSV10XYgItA&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1"
+                frameborder="0" 
+                allow="autoplay; encrypted-media" 
+                allowfullscreen
+                class="hero-video">
+            </iframe>
+            <div class="video-overlay"></div>
         </div>
-        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-particles"></div>
+            <h1 class="hero-title animate-text">LABORATORIO DE ANÁLISIS QUÍMICO DE MINERALES Y PRUEBAS METALÚRGICAS</h1>
+            <p class="hero-subtitle animate-text-delay">Calidad y Experiencia a su Servicio</p>
+            <a href="servicios.html" class="btn btn-primary btn-glow animate-button">Conoce Nuestros Servicios</a>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
     </section>
 
     <!-- Services Preview -->
     <section class="services-preview">
         <div class="container">
-            <h2 class="section-title">Nuestros Servicios Especializados</h2>
+            <h2 class="section-title floating-title">Nuestros Servicios Especializados</h2>
             <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">🧪</div>
+                <div class="service-card hover-lift">
+                    <div class="service-icon pulse-animation">🧪</div>
                     <h3>Análisis Químico de Minerales</h3>
                     <p>En RCJ Labs Universal se realizan todas las operaciones necesarias destinadas al análisis de minerales, con la máxima trazabilidad del proceso usando métodos clásicos e instrumentales.</p>
-                    <a href="servicios.html#analisis-quimico" class="btn btn-secondary">Más Información</a>
+                    <a href="servicios.html#analisis-quimico" class="btn btn-secondary btn-shine">Más Información</a>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">⚗️</div>
+                <div class="service-card hover-lift">
+                    <div class="service-icon pulse-animation">⚗️</div>
                     <h3>Pruebas Metalúrgicas</h3>
                     <p>Ofrecemos a nuestros clientes soluciones de trascendencia para que logren alcanzar procesos metalúrgicos eficientes, así como también para diseñar, controlar u optimizar sus operaciones de extracción.</p>
-                    <a href="servicios.html#pruebas-metalurgicas" class="btn btn-secondary">Más Información</a>
+                    <a href="servicios.html#pruebas-metalurgicas" class="btn btn-secondary btn-shine">Más Información</a>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">👨‍🔬</div>
+                <div class="service-card hover-lift">
+                    <div class="service-icon pulse-animation">👨‍🔬</div>
                     <h3>Asesoramiento y Consultorías</h3>
                     <p>RCJ Labs Universal cuenta con profesionales altamente capacitados y especialistas conocedores de cada uno de los rubros inmersos en el sector Minero – Metalúrgico – Ambiental.</p>
-                    <a href="servicios.html#consultoria" class="btn btn-secondary">Más Información</a>
+                    <a href="servicios.html#consultoria" class="btn btn-secondary btn-shine">Más Información</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Capabilities Section -->
-    <section class="capabilities">
+    <section class="capabilities parallax-section">
         <div class="container">
             <div class="capabilities-content">
-                <div class="capabilities-text">
-                    <h2>Capacidades Tecnológicas</h2>
+                <div class="capabilities-text slide-in-left">
+                    <h2 class="glitch-text">Capacidades Tecnológicas</h2>
                     <p>Nuestras instalaciones están distribuidas en varias salas con objetivos específicos:</p>
-                    <ul>
+                    <ul class="animated-list">
                         <li>Sala de preparación mecánica de muestras</li>
                         <li>Digestión ácida y fundición</li>
                         <li>Sala de pesado y volumetría</li>
@@ -104,8 +118,11 @@
                     </ul>
                     <p>En todas estas salas existe equipamiento específico para los diferentes ensayos a realizar, así como para la preparación/adecuación de la muestra, y su posterior análisis.</p>
                 </div>
-                <div class="capabilities-image">
-                    <img src="https://www.rcjlabsuniversal.com/wp-content/uploads/2020/01/muestreo.jpg" alt="Instalaciones del laboratorio">
+                <div class="capabilities-image slide-in-right">
+                    <div class="image-container">
+                        <img src="https://www.rcjlabsuniversal.com/wp-content/uploads/2020/01/muestreo.jpg" alt="Instalaciones del laboratorio">
+                        <div class="image-overlay-effect"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -114,17 +131,29 @@
     <!-- Methods Section -->
     <section class="methods">
         <div class="container">
-            <h2 class="section-title">Métodos de Análisis</h2>
+            <h2 class="section-title neon-glow">Métodos de Análisis</h2>
             <div class="methods-grid">
-                <div class="method-card">
-                    <h3>Métodos Clásicos</h3>
-                    <p>En RCJ Labs Universal se usan técnicas de análisis como Volumetría, Gravimetría y Ensayos al Fuego (FFAA).</p>
-                    <img src="https://www.rcjlabsuniversal.com/wp-content/uploads/2020/01/Titulacion-e1578592654378.jpg" alt="Métodos clásicos">
+                <div class="method-card flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h3>Métodos Clásicos</h3>
+                            <p>En RCJ Labs Universal se usan técnicas de análisis como Volumetría, Gravimetría y Ensayos al Fuego (FFAA).</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="https://www.rcjlabsuniversal.com/wp-content/uploads/2020/01/Titulacion-e1578592654378.jpg" alt="Métodos clásicos">
+                        </div>
+                    </div>
                 </div>
-                <div class="method-card">
-                    <h3>Métodos Instrumentales</h3>
-                    <p>También se usan técnicas instrumentales, y cuenta con equipos de Espectrometría de Absorción Atómica.</p>
-                    <img src="https://www.rcjlabsuniversal.com/wp-content/uploads/2019/07/chemistri_reducido.jpg" alt="Métodos instrumentales">
+                <div class="method-card flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h3>Métodos Instrumentales</h3>
+                            <p>También se usan técnicas instrumentales, y cuenta con equipos de Espectrometría de Absorción Atómica.</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="https://www.rcjlabsuniversal.com/wp-content/uploads/2019/07/chemistri_reducido.jpg" alt="Métodos instrumentales">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -133,15 +162,15 @@
     <!-- Clients Section -->
     <section class="clients">
         <div class="container">
-            <h2 class="section-title">Con Quienes Trabajamos</h2>
+            <h2 class="section-title typewriter">Con Quienes Trabajamos</h2>
             <div class="clients-grid">
-                <div class="client-logo">
+                <div class="client-logo floating-logo">
                     <img src="https://www.rcjlabsuniversal.com/wp-content/uploads/2018/10/logo_glore_peru_sac.png" alt="Glore Perú SAC">
                 </div>
-                <div class="client-logo">
+                <div class="client-logo floating-logo">
                     <img src="https://www.rcjlabsuniversal.com/wp-content/uploads/2018/10/logo_minh-_cooper_sa.png" alt="Mining Cooper SA">
                 </div>
-                <div class="client-logo">
+                <div class="client-logo floating-logo">
                     <img src="https://www.rcjlabsuniversal.com/wp-content/uploads/2018/12/recuperada-e1545866184190.png" alt="Recuperada">
                 </div>
             </div>
